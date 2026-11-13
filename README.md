@@ -134,7 +134,6 @@ Compute digests and checksums over selections, documents, or files on disk:
 ### Prerequisites
 * **Visual Studio 2022** (or newer) with the **Desktop development with C++** workload
 * **CMake 3.20+** (for running the unit test suite, benchmark, and CLI)
-* *Node.js is **not** required to build or run the plugin (only used by `tools/generate-golden.ps1` if regenerating Prettier golden test fixtures).*
 
 ### Build the Notepad++ Plugin (MSBuild)
 
@@ -147,16 +146,6 @@ msbuild vs.proj\ArgpiSuite.vcxproj /p:Configuration=Release /p:Platform=x64 /m /
 :: 32-bit (Release|Win32) -> bin\ArgpiSuite.dll
 msbuild vs.proj\ArgpiSuite.vcxproj /p:Configuration=Release /p:Platform=Win32 /m /v:minimal
 ```
-
-### Build & Run Tests (CMake + CTest)
-
-```bat
-cmake -S . -B build -A x64
-cmake --build build --config Release
-ctest --test-dir build -C Release --output-on-failure
-```
-
-CTest runs all unit test suites (`argpiformat_tests`, `argpimenu_tests`, `argpipassword_tests`, `argpicrypto_tests`, `argpiencoding_tests`, `argpigenerator_tests`, `argpihash_tests`, `argpitools_tests`) and also builds `argpiformat_bench` and `argpifmt_cli`.
 
 ---
 
