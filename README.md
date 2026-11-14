@@ -120,7 +120,7 @@ Compute digests and checksums over selections, documents, or files on disk:
 * **Notepad++ 8.4 or later** (64-bit or 32-bit) on Windows
 
 ### Manual Installation
-1. Download or build `ArgpiSuite.dll` matching your Notepad++ architecture (`x64` from `bin64\ArgpiSuite.dll` or `x86` from `bin\ArgpiSuite.dll`).
+1. Download or build `ArgpiSuite.dll` matching your Notepad++ architecture (`x64` from `argpisuitenpp_x64\ArgpiSuite.dll` or `x86` from `argpisuitenpp_x32\ArgpiSuite.dll`).
 2. Create a folder named `ArgpiSuite` inside your Notepad++ `plugins` directory:
    ```text
    <Notepad++>\plugins\ArgpiSuite\ArgpiSuite.dll

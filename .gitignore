@@ -68,8 +68,6 @@ Testing/
 .cache/
 .plans/
 bench/
-bin64/
-bin/
 dist/
 tests/
 tools/

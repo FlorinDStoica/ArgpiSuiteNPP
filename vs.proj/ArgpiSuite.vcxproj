@@ -198,15 +198,15 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\</OutDir>
+    <OutDir>..\argpisuitenpp_x32\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin64\</OutDir>
+    <OutDir>..\argpisuitenpp_x64\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\arm64\</OutDir>
+    <OutDir>..\argpisuitenpp_arm64\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -283,8 +283,8 @@
       <ImportLibrary>$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy ..\license.txt ..\bin\license.txt
-copy ..\README.md ..\bin\README.md</Command>
+      <Command>copy ..\license.txt ..\argpisuitenpp_x32\license.txt
+copy ..\README.md ..\argpisuitenpp_x32\README.md</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -309,8 +309,8 @@ copy ..\README.md ..\bin\README.md</Command>
       <ImportLibrary>$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy ..\license.txt ..\bin64\license.txt
-copy ..\README.md ..\bin64\README.md</Command>
+      <Command>copy ..\license.txt ..\argpisuitenpp_x64\license.txt
+copy ..\README.md ..\argpisuitenpp_x64\README.md</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
@@ -335,8 +335,8 @@ copy ..\README.md ..\bin64\README.md</Command>
       <ImportLibrary>$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy ..\license.txt ..\arm64\license.txt
-copy ..\README.md ..\arm64\README.md</Command>
+      <Command>copy ..\license.txt ..\argpisuitenpp_arm64\license.txt
+copy ..\README.md ..\argpisuitenpp_arm64\README.md</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
