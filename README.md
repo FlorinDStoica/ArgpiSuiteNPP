@@ -149,9 +149,8 @@ msbuild vs.proj\ArgpiSuite.vcxproj /p:Configuration=Release /p:Platform=Win32 /m
 
 ---
 
-## Documentation & Third-Party Notices
+## Third-Party Notices
 
-* [`KNOWN_DIFFERENCES.md`](KNOWN_DIFFERENCES.md) — Formatter language coverage and differences from Prettier 3.x
 * [`THIRD_PARTY.md`](THIRD_PARTY.md) — Development-time tools and Notepad++ plugin header notices
 
 ---
