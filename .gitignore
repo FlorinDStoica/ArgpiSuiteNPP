@@ -66,3 +66,19 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+.plans/
+bench/
+bin64/
+bin/
+dist/
+tests/
+tools/
+readme.FIRST
+
+vs.proj/ArgpiSuite/
+vs.proj/ArgpiSuite.exp
+vs.proj/ArgpiSuite.lib
+
+build-dist.cmd
+KNOWN_DIFFERENCES.md
+USER.TODO.md
